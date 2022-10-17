@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background: rgb(41, 34, 34);
+  color: white ;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1.5rem;
+  padding: 0 10% 10%;
+}
+.addpost-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add-post{
+  padding: 0.5rem 3rem;
+  
+  background-color: rgb(51, 175, 51);
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  
+}
+.remove-post{
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  background-color: rgba(255, 0, 0, 0.959);
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+}
+.trash-icon{
+  margin-top: 1rem;
+  margin-left: 50%;
+  cursor: pointer;
+  font-size: 25px;
+}
+.trash-icon:hover{
+  color: rgb(255, 22, 22);
+}
+.add-new-post{
+  margin-left: 10rem;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+#postAuthor,
+#postTitle{
+  border-radius: 0.5rem;
+  padding: 0.3rem 0;
+  border: none;
+  outline: none;
+  padding: 0.5rem 0;
+  padding-left: 1rem;
+
+}
+.post-content{
+  font-size: 25px;
+  margin: 0.5rem;
+  color:gray
+}
+#postContent{
+  
+  height: 27vh;
+  resize: none;
+  outline: none;
+  border-radius: 1rem;
+  border: none;
+  padding: 1rem;
+}
+.add-post-btn{
+  padding: 0.3rem;
+  border-radius: 0.7rem;
+  border: none;
+  background-color: gray;
+}
+input,
+textarea,
+button,
+select {
+  font: inherit;
+  margin-bottom: 1em;
+}
+
+main {
+  max-width: 500px;
+  margin: auto;
+}
+
+section {
+  margin-top: 1em;
+}
+
+article {
+  margin: 0.5em 0.5em 0.5em 0;
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  padding: 1em;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  font-size: 1.2rem;
+  margin: 0.5em 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.postCredit {
+  font-size: 1rem;
+}
+
+.reactionButton {
+  margin: 0 0.25em 0 0;
+  background: transparent;
+  border: none;
+  color: whitesmoke;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 768px){
+  .add-new-post{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .trash-icon{
+    margin-top: 1rem;
+    margin-left: 45%;
+    cursor: pointer;
+    font-size: 25px;
+  }
+}
